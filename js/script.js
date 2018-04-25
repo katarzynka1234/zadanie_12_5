@@ -10,11 +10,11 @@ $(document).ready(function () {
         // $.ajaxSetup({ cache: false });
     };
 
+    var quoteText = $(data.content).text().trim();
+    var quoteAuthor = data.title;
+
     function createTweet(input) {
         var data = input[0];
-
-        var quoteText = $(data.content).text().trim();
-        var quoteAuthor = data.title;
 
         if (!quoteAutor.length) {
             quoteAutor = "Unknow author";
